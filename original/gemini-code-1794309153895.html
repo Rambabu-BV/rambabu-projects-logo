@@ -1,0 +1,74 @@
+<!-- Cyber Monogram Icon Badge -->
+<div class="vault-icon-badge" aria-label="Rambabu Vault Icon">
+  <div class="badge-glow"></div>
+  <div class="badge-inner">
+    <svg class="monogram-symbol" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Neon Monogram Trace (R-A-M-B-U Intertwined) -->
+      <path class="trace-glow" d="M 30 48 V 78 M 30 48 H 52 C 60 48 60 62 52 62 H 30 M 46 62 L 58 78" />
+      <path class="trace-glow" d="M 40 32 L 50 18 L 60 32 M 50 18 V 65" />
+      <path class="trace-glow" d="M 54 48 H 68 C 76 48 76 60 68 60 H 54 M 54 60 H 70 C 78 60 78 74 70 74 H 54" />
+      <path class="trace-glow" d="M 38 68 C 38 85 62 85 62 68" />
+      
+      <!-- Circuit Nodes -->
+      <circle cx="36" cy="55" r="1.5" class="circuit-dot" />
+      <circle cx="50" cy="74" r="1.8" class="circuit-dot" />
+      <circle cx="64" cy="42" r="1.5" class="circuit-dot" />
+    </svg>
+  </div>
+</div>
+
+<style>
+  .vault-icon-badge {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .badge-glow {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #818cf8 0%, #38bdf8 50%, #34d399 100%);
+    opacity: 0.35;
+    filter: blur(8px);
+    transition: opacity 0.3s ease;
+  }
+
+  .vault-icon-badge:hover .badge-glow {
+    opacity: 0.65;
+  }
+
+  .badge-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #090d16;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 12px rgba(0, 0, 0, 0.8);
+  }
+
+  .monogram-symbol {
+    width: 32px;
+    height: 32px;
+  }
+
+  .trace-glow {
+    stroke: url(#brandGrad, #38bdf8);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    filter: drop-shadow(0 0 3px rgba(56, 189, 248, 0.8));
+  }
+
+  .circuit-dot {
+    fill: #34d399;
+    filter: drop-shadow(0 0 2px #34d399);
+  }
+</style>
