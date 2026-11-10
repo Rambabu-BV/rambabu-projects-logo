@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rambabu Monogram</title>
+<meta name="description" content="Rambabu neon-circuit monogram. AI-generated with Google Gemini, directed and selected by Rambabu.">
+<meta name="theme-color" content="#111217">
+<link rel="icon" type="image/png" href="rambabu-monogram-512x512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+  :root {
+    --bg: #111217;
+    --bg-raise: #1a1c28;
+    --grid: rgba(120, 140, 190, 0.06);
+    --ink: #e6ebf5;
+    --ink-dim: #8a93a8;
+    --indigo: #646ee0;
+    --cyan: #3ed9f3;
+    --mint: #35d8a9;
+    --brand: linear-gradient(135deg, var(--indigo) 0%, var(--cyan) 50%, var(--mint) 100%);
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html, body { min-height: 100%; }
+  body {
+    background:
+      linear-gradient(var(--grid) 1px, transparent 1px) 0 0 / 64px 64px,
+      linear-gradient(90deg, var(--grid) 1px, transparent 1px) 0 0 / 64px 64px,
+      radial-gradient(ellipse at 50% 35%, #1d2233 0%, var(--bg) 70%);
+    background-color: var(--bg);
+    color: var(--ink);
+    font-family: ui-sans-serif, -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    display: grid;
+    place-items: center;
+    padding: 48px 16px;
+  }
+  main { width: 100%; max-width: 760px; display: grid; gap: 40px; justify-items: center; }
+
+  /* Hero monogram */
+  .hero { position: relative; width: min(100%, 520px); aspect-ratio: 1; }
+  .hero::before {
+    content: ""; position: absolute; inset: 8%;
+    background: var(--brand); filter: blur(60px); opacity: .28; border-radius: 30%;
+    animation: pulse 6s ease-in-out infinite;
+  }
+  .hero img {
+    position: relative; width: 100%; height: 100%; display: block;
+    border-radius: 28px; border: 1px solid rgba(62, 217, 243, .18);
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .55);
+  }
+  @keyframes pulse { 50% { opacity: .42; } }
+  @media (prefers-reduced-motion: reduce) { .hero::before { animation: none; } }
+
+  /* Icon badge — corrected version of the Gemini badge component.
+     The original referenced url(#brandGrad) without ever defining that gradient,
+     and its hand-traced SVG did not resemble the logo; this uses the real monogram. */
+  .badges { display: flex; gap: 28px; align-items: center; flex-wrap: wrap; justify-content: center; }
+  .vault-icon-badge { position: relative; display: inline-flex; width: var(--s, 48px); height: var(--s, 48px); }
+  .vault-icon-badge .badge-glow {
+    position: absolute; inset: 0; border-radius: 28%;
+    background: var(--brand); opacity: .35; filter: blur(8px); transition: opacity .3s ease;
+  }
+  .vault-icon-badge:hover .badge-glow { opacity: .65; }
+  .vault-icon-badge img {
+    position: relative; width: 100%; height: 100%; border-radius: 28%;
+    border: 1px solid rgba(62, 217, 243, .25);
+  }
+
+  .wordmark {
+    font-size: clamp(28px, 6vw, 44px); font-weight: 800; letter-spacing: .32em; padding-left: .32em;
+    background: var(--brand); -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .swatches { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  .sw { display: grid; gap: 6px; justify-items: center; font: 12px ui-monospace, "SF Mono", Menlo, monospace; color: var(--ink-dim); }
+  .sw i { width: 56px; height: 56px; border-radius: 12px; border: 1px solid rgba(255,255,255,.08); }
+  footer { color: var(--ink-dim); font-size: 13px; text-align: center; line-height: 1.6; max-width: 560px; }
+  footer strong { color: var(--ink); font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero">
+    <img src="rambabu-monogram-1152x1152.png" width="1152" height="1152"
+         alt="Rambabu monogram: neon-circuit letters R, A, M, B, U in an indigo-to-cyan-to-mint gradient">
+  </div>
+
+  <div class="wordmark" aria-hidden="true">RAMBABU</div>
+
+  <div class="badges" aria-label="Icon badge sizes">
+    <span class="vault-icon-badge" style="--s:32px"><span class="badge-glow"></span><img src="rambabu-monogram-512x512.png" alt="Rambabu icon, 32px"></span>
+    <span class="vault-icon-badge" style="--s:48px"><span class="badge-glow"></span><img src="rambabu-monogram-512x512.png" alt="Rambabu icon, 48px"></span>
+    <span class="vault-icon-badge" style="--s:72px"><span class="badge-glow"></span><img src="rambabu-monogram-512x512.png" alt="Rambabu icon, 72px"></span>
+    <span class="vault-icon-badge" style="--s:112px"><span class="badge-glow"></span><img src="rambabu-monogram-512x512.png" alt="Rambabu icon, 112px"></span>
+  </div>
+
+  <div class="swatches">
+    <div class="sw"><i style="background:#646ee0"></i>#646ee0</div>
+    <div class="sw"><i style="background:#3ed9f3"></i>#3ed9f3</div>
+    <div class="sw"><i style="background:#35d8a9"></i>#35d8a9</div>
+    <div class="sw"><i style="background:#111217"></i>#111217</div>
+  </div>
+
+  <footer>
+    <strong>AI-generated with Google Gemini, directed and selected by Rambabu.</strong><br>
+    Created 2026-11-10. Not hand-drawn. Visible Gemini sparkle removed by inpainting;
+    Google's invisible SynthID watermark remains in the image.
+  </footer>
+</main>
+</body>
+</html>
